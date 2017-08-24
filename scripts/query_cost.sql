@@ -20,7 +20,7 @@ SELECT TOP 10 SUBSTRING(qt.TEXT, (qs.statement_start_offset/2)+1,
 FROM sys.dm_exec_query_stats qs
 CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) qt
 CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp
-WHERE qt.objectid = OBJECT_ID('SpPatientHistory3x')
+WHERE qt.objectid = OBJECT_ID('some_object_name')
 --ORDER BY qs.total_logical_reads DESC -- logical reads
 --ORDER BY qs.total_logical_writes DESC -- logical writes
 --ORDER BY qs.total_worker_time DESC -- CPU time

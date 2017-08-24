@@ -3,7 +3,7 @@
 --Usage:  Replace @TableName with the name of your class.
 --Results:  Converts a table into a C# class.
 --###########################################################
-declare @TableName sysname = 'Patients'
+declare @TableName sysname = 'some_table_name'
 declare @Result varchar(max) = 'public class ' + @TableName + '
 {'
 

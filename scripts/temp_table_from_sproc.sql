@@ -3,8 +3,8 @@
 --Usage:  Find job_id from the first select results.
 --Results: Returns a string containing the Create Temp Table of the SProcs' contents.
 --###########################################################
-DECLARE @ProcedureName  nvarchar(128) = 'spSomComplianceExport',
-        @TableName      nvarchar(128) = '#TempCompliance',
+DECLARE @ProcedureName  nvarchar(128) = 'some_proc_name',
+        @TableName      nvarchar(128) = '#some_table_name',
         @SQL            nvarchar(max);
 
 

@@ -4,7 +4,6 @@
 --Results: Translates object type into a human readable format.
 --###########################################################
 SELECT 
-	--[type], 
 	CASE [type]
 		WHEN 'C' THEN 'CHECK_CONSTRAINT'  
 		WHEN 'D' THEN 'DEFAULT_CONSTRAINT'  
@@ -24,8 +23,6 @@ SELECT
 	END AS [Type],
 	name, create_date, modify_date
 FROM sys.objects
-WHERE --CONVERT(DATE,modify_date) >= '6/3/2015'
-	name = 'spInsertPartySchemaTables'
-	--AND 
-	--type = 'P' 
+WHERE
+	name = 'some_object_name'
 ORDER BY name,modify_date DESC
